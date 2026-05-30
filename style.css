@@ -1489,75 +1489,96 @@ input[type="checkbox"]{
 }
 /* MOBILE RESPONSIVE */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-    .navbar,
-    .nav-links,
-    .hero,
-    .about-container,
-    .results-container,
-    .location-container,
-    .footer-container,
-    .form-grid,
-    .signature-row {
+    .navbar {
         flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
 
-    .container,
-    .about-section,
-    .location-section,
-    .results-section,
-    .form-container {
+    .logo-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-section img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-section h1 {
+        font-size: 32px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .director-card {
+        width: 90%;
+        margin: 20px auto;
+        position: static;
+    }
+
+    .director-card h2 {
+        font-size: 28px;
+    }
+
+    .director-card p {
+        font-size: 18px;
+    }
+
+    .form-container,
+    .about-container,
+    .results-container,
+    .location-container {
         width: 95%;
         margin: auto;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .form-grid {
+    .form-grid,
+    .signature-row {
         display: block;
     }
 
     input,
-    select,
     textarea,
+    select,
     button {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .checkbox-group {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .signature-row {
+    .landmark-grid,
+    .results-grid,
+    .vmv-container {
         display: block;
     }
 
-    .signature-row div {
-        margin-bottom: 15px;
-    }
-
-    .submit-btn {
+    .vmv-card,
+    .result-card,
+    .landmark-card {
         width: 100%;
+        margin-bottom: 20px;
     }
 }
