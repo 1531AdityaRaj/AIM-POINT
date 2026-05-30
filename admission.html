@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="admission-page">
+
+<div class="form-container">
+
+    <div class="form-header">
+
+        <img src="logo.png" alt="AIM POINT Logo">
+
+        <div class="header-text">
+            <h1>AIM POINT STUDY CIRCLE</h1>
+            <h2>ADMISSION FORM</h2>
+        </div>
+
+    </div>
+
+    <form>
+
+        <h3>PERSONAL DETAILS</h3>
+
+        <label>Student's Name</label>
+        <input type="text" id="student_name">
+
+        <label>Father's Name</label>
+        <input type="text" id="father_name">
+
+        <label>Mother's Name</label>
+        <input type="text" id="mother_name">
+
+        <div class="form-grid">
+
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <select id="gender">
+                    <option>Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Rather not say</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Blood Group</label>
+                <input type="text" id="blood_group">
+            </div>
+
+        </div>
+
+        <label>Nationality</label>
+        <input type="text" id="nationality">
+
+        <label>Aadhar Number</label>
+        <input type="text" id="aadhar_number">
+
+        <label>Father's Occupation</label>
+        <input type="text" id="father_occupation">
+
+        <h3>CONTACT DETAILS</h3>
+
+        <label>Contact No. (Parents)</label>
+        <input type="text" id="parent_mobile">
+
+        <label>Contact No. (Student)</label>
+        <input type="text" id="mobile">
+
+        <label>WhatsApp Number</label>
+        <input type="text" id="whatsapp_number">
+
+        <label>Email ID</label>
+        <input type="email" id="email">
+
+        <label>Address</label>
+        <textarea rows="3" id="address"></textarea>
+
+        <div class="form-grid">
+
+            <div>
+                <label>City</label>
+                <input type="text" id="city">
+            </div>
+
+            <div>
+                <label>State</label>
+                <input type="text" id="state">
+            </div>
+
+            <div>
+                <label>PIN Code</label>
+                <input type="text" id="pin_code">
+            </div>
+
+        </div>
+
+        <h3>EDUCATION DETAILS</h3>
+
+        <label>School / College Name</label>
+        <input type="text" id="school_name">
+
+        <label>Exam Board</label>
+
+        <select id="board">
+            <option>Select</option>
+            <option>CBSE</option>
+            <option>ICSE</option>
+            <option>JAC</option>
+            <option>Others</option>
+        </select>
+
+        <label>Percentage Marks Obtained</label>
+        <input type="text" id="percentage">
+
+        <h3>SUBJECTS</h3>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Maths</label>
+            <label><input type="checkbox"> Physics</label>
+            <label><input type="checkbox"> Chemistry</label>
+            <label><input type="checkbox"> Biology</label>
+            <label><input type="checkbox"> English</label>
+        </div>
+
+        <label>Strongest Subject</label>
+        <input type="text" id="strongest_subject">
+
+        <label>Weakest Subject</label>
+        <input type="text" id="weakest_subject">
+
+        <h3>CLASS APPLYING FOR</h3>
+
+        <select id="class_applied">
+            <option>KG</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+            <option>V</option>
+            <option>VI</option>
+            <option>VII</option>
+            <option>VIII</option>
+            <option>IX</option>
+            <option>X</option>
+            <option>XI</option>
+            <option>XII</option>
+            <option>JEE</option>
+            <option>NEET</option>
+        </select>
+
+        <h3>PASSPORT SIZE PHOTO</h3>
+
+        <input type="file">
+
+        <h3>PURPOSE FOR JOINING AIM POINT</h3>
+
+        <textarea rows="4" id="purpose"></textarea>
+
+        <h3>HOW DID YOU KNOW ABOUT AIM POINT?</h3>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Our Best Results</label>
+            <label><input type="checkbox"> Alumni</label>
+            <label><input type="checkbox"> Advertisements</label>
+            <label><input type="checkbox"> Brother/Sister Studying Here</label>
+        </div>
+
+        <label>Admission Fee</label>
+        <input type="text" id="admission_fee">
+
+        <label>Date of Admission</label>
+        <input type="date" id="admission_date">
+
+        <label>Monthly Fee</label>
+        <input type="text" id="monthly_fee">
+
+        <div class="declaration">
+
+            <input type="checkbox">
+
+            I hereby declare that all information given above is true and accurate to the best of my knowledge.
+
+        </div>
+
+        <div class="signature-row">
+
+            <div>
+                <label>Student Signature</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label>Parent Signature</label>
+                <input type="text">
+            </div>
+
+        </div>
+
+        <button
+            type="button"
+            class="submit-btn"
+            onclick="submitAdmission()">
+
+            Submit Admission Form
+
+        </button>
+
+    </form>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
