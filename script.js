@@ -62,7 +62,7 @@ async function submitAdmission() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/admission",
+            "https://aim-point.onrender.com/admission",
             {
                 method: "POST",
                 headers: {
