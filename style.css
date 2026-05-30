@@ -1487,98 +1487,174 @@ input[type="checkbox"]{
 
     transform:scale(1.1);
 }
-/* MOBILE RESPONSIVE */
+@media (max-width:768px){
 
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
+    nav{
+        padding:15px;
     }
 
-    .logo-section {
-        flex-direction: column;
-        align-items: center;
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
     }
 
-    .logo-section img {
-        width: 80px;
-        height: 80px;
+    .logo-section{
+        flex-direction:column;
     }
 
-    .logo-section h1 {
-        font-size: 32px;
-        line-height: 1.1;
-        text-align: center;
+    .logo-section img{
+        width:70px;
+        height:70px;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
+    .logo-section h1{
+        font-size:22px;
     }
 
-    .nav-links a {
-        font-size: 18px;
+    .logo-section p{
+        font-size:14px;
     }
 
-    .hero {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+    ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
     }
 
-    .hero-content h1 {
-        font-size: 40px;
+    ul li{
+        font-size:16px;
     }
 
-    .director-card {
-        width: 90%;
-        margin: 20px auto;
-        position: static;
+    .hero{
+        height:auto;
+        min-height:100vh;
     }
 
-    .director-card h2 {
-        font-size: 28px;
+    .hero-content{
+        padding:30px 20px;
+        text-align:center;
     }
 
-    .director-card p {
-        font-size: 18px;
+    .tagline{
+        position:static;
+        display:inline-block;
+        margin-bottom:20px;
+        font-size:14px;
     }
 
-    .form-container,
-    .about-container,
-    .results-container,
-    .location-container {
-        width: 95%;
-        margin: auto;
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content h2{
+        font-size:38px;
+    }
+
+    .description{
+        font-size:18px;
+    }
+
+    .join-btn,
+    .course-btn{
+        width:100%;
+        max-width:320px;
+        height:auto;
+        padding:15px;
+        font-size:18px;
+    }
+
+    .contact-box{
+        position:static;
+        width:100%;
+        margin-top:30px;
+    }
+
+    .cards,
+    .course-container,
+    .topper-container,
+    .why-container,
+    .why-grid,
+    .achievements{
+        grid-template-columns:1fr;
+    }
+
+    .senior-card{
+        grid-column:auto;
+    }
+
+    .courses-page,
+    .results-page,
+    .history,
+    .vmv,
+    .why-us,
+    .student-message,
+    .location-section,
+    .why-choose{
+        padding:40px 20px;
+    }
+
+    .section-title,
+    .results-title,
+    .why-us h1,
+    .student-message h1,
+    .history h2,
+    .location-section h1{
+        font-size:34px;
+    }
+
+    .course-card h2,
+    .vmv-card h2,
+    .why-card h2{
+        font-size:28px;
+    }
+
+    .director-section{
+        flex-direction:column;
+        padding:40px 20px;
+    }
+
+    .director-photo{
+        width:100%;
+        height:300px;
+    }
+
+    .director-message h1{
+        font-size:32px;
+    }
+
+    .director-message p{
+        font-size:18px;
+    }
+
+    .form-header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .form-header img{
+        width:120px;
+        height:120px;
+        margin-left:0;
+    }
+
+    .header-text h1{
+        font-size:28px;
+    }
+
+    .header-text h2{
+        font-size:24px;
     }
 
     .form-grid,
-    .signature-row {
-        display: block;
+    .signature-row{
+        grid-template-columns:1fr;
     }
 
-    input,
-    textarea,
-    select,
-    button {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .landmark-grid,
-    .results-grid,
-    .vmv-container {
-        display: block;
-    }
-
-    .vmv-card,
-    .result-card,
-    .landmark-card {
-        width: 100%;
-        margin-bottom: 20px;
+    .whatsapp-btn{
+        width:60px;
+        height:60px;
+        right:15px;
+        bottom:15px;
     }
 }
