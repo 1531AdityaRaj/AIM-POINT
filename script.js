@@ -135,35 +135,41 @@ function initFaqAccordion() {
 
 /* ================= FILTER TABS (COURSES & RESULTS) ================= */
 function initFilterTabs() {
-    const filterButtons = document.querySelectorAll('.filter-tab-btn');
-    if (!filterButtons.length) return;
+    const filterTabContainers = document.querySelectorAll('.courses-filter-tabs');
+    if (!filterTabContainers.length) return;
 
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Remove active from siblings
-            const parent = btn.parentElement;
-            if (parent) {
-                parent.querySelectorAll('.filter-tab-btn').forEach(b => b.classList.remove('active'));
-            }
-            btn.classList.add('active');
+    filterTabContainers.forEach(container => {
+        const filterButtons = container.querySelectorAll('.filter-tab-btn');
+        const parentSection = container.closest('section') || document;
+        const grid = parentSection.querySelector('.courses-grid, .achievers-grid') || document.querySelector('.courses-grid, .achievers-grid');
 
-            const filterValue = btn.getAttribute('data-filter');
-            const targetGridSelector = btn.getAttribute('data-target-grid') || '.courses-grid, .achievers-grid';
-            const cards = document.querySelectorAll(`${targetGridSelector} > div`);
+        if (!grid) return;
+        const cards = grid.querySelectorAll('.course-card, .achiever-card');
 
-            cards.forEach(card => {
-                if (!filterValue || filterValue === 'all') {
-                    card.style.display = '';
-                    card.style.animation = 'fadeIn 0.4s ease';
-                } else {
-                    const categories = (card.getAttribute('data-category') || '').split(' ');
-                    if (categories.includes(filterValue)) {
-                        card.style.display = '';
-                        card.style.animation = 'fadeIn 0.4s ease';
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = (btn.getAttribute('data-filter') || '').trim().toLowerCase();
+
+                cards.forEach(card => {
+                    if (!filterValue || filterValue === 'all') {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeIn 0.35s ease forwards';
                     } else {
-                        card.style.display = 'none';
+                        const rawCategories = (card.getAttribute('data-category') || '').toLowerCase();
+                        const categories = rawCategories.split(/\s+/);
+
+                        if (categories.includes(filterValue)) {
+                            card.style.display = 'flex';
+                            card.style.animation = 'fadeIn 0.35s ease forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
                     }
-                }
+                });
             });
         });
     });

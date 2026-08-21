@@ -657,6 +657,16 @@ nav {
     font-size: 1.6rem;
     color: var(--primary-900);
     box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    overflow: hidden;
+    border: 2px solid var(--accent-gold);
+    flex-shrink: 0;
+}
+
+.director-avatar-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .director-info h3 {
@@ -947,7 +957,7 @@ section {
     background: #ffffff;
     border-radius: var(--radius-xl);
     border: 2px solid var(--border-light);
-    padding: 34px 28px;
+    padding: 30px 26px;
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
@@ -964,61 +974,78 @@ section {
     background: linear-gradient(180deg, #ffffff 0%, #fffdf8 100%);
 }
 
-.course-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--primary-100);
-    color: var(--primary-600);
-    font-size: 0.75rem;
+.course-header {
+    margin-bottom: 20px;
+}
+
+.course-board-name {
+    font-size: 1.38rem;
+    font-weight: 800;
+    color: var(--primary-900);
+    margin-bottom: 4px;
+    line-height: 1.25;
+}
+
+.course-classes {
+    display: block;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+}
+
+.course-badges-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    padding-bottom: 4px;
+}
+
+.batch-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(245, 158, 11, 0.12);
+    color: #b45309;
+    font-size: 0.76rem;
     font-weight: 800;
     padding: 4px 12px;
     border-radius: var(--radius-full);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: var(--transition-base);
+}
+
+.course-badge {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    background: var(--primary-100);
+    color: var(--primary-700);
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap;
     transition: var(--transition-base);
+}
+
+.course-card:hover .batch-tag {
+    background: rgba(245, 158, 11, 0.22);
+    border-color: var(--accent-gold);
+    color: var(--primary-900);
 }
 
 .course-card:hover .course-badge {
     background: var(--grad-gold);
     color: var(--primary-900);
-    box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
-}
-
-.course-header {
-    margin-bottom: 18px;
-}
-
-.course-board-name {
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: var(--primary-900);
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.batch-tag {
-    display: inline-block;
-    background: var(--accent-gold-light);
-    color: var(--accent-gold-hover);
-    font-size: 0.82rem;
-    font-weight: 800;
-    padding: 2px 10px;
-    border-radius: var(--radius-full);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.course-classes {
-    display: inline-block;
-    color: var(--text-muted);
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 
 .course-features-list {
@@ -1094,24 +1121,29 @@ section {
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: var(--radius-xl);
-    padding: 38px 28px;
+    padding: 34px 24px;
     text-align: center;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-.director-photo-placeholder {
-    width: 130px;
-    height: 130px;
+.director-photo-frame {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    background: var(--grad-gold);
     margin: 0 auto 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.2rem;
-    color: var(--primary-900);
-    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
-    border: 4px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    border: 4px solid var(--accent-gold);
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.35);
+    background: #103b87;
+    position: relative;
+}
+
+.director-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
 }
 
 .director-card-visual h3 {
