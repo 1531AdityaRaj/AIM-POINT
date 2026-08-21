@@ -51,6 +51,19 @@
         </div>
     </div>
 
+    <!-- ================= LIVE NOTICE TICKER ================= -->
+    <div class="notice-ticker-banner">
+        <div class="container">
+            <div class="notice-ticker-container">
+                <span class="ticker-label"><span class="ticker-pulse"></span> Latest Notice</span>
+                <div class="ticker-content">
+                    📢 Admissions Open for 2025-2026 Academic Session (CBSE • ICSE • JAC • XI-XII Science) | Weekly Board Mock Test on Sunday 10:00 AM.
+                    <a href="admission.html">Apply Online →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ================= STICKY HEADER & NAVBAR ================= -->
     <header>
         <div class="container">
@@ -70,6 +83,7 @@
                     <li><a href="courses.html">Courses</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="results.html">Results & Achievers</a></li>
+                    <li><a href="gallery.html">Campus Gallery</a></li>
                     <li><a href="location.html">Location</a></li>
                 </ul>
 
@@ -103,6 +117,7 @@
                 <li><a href="courses.html"><i class="fa-solid fa-book-open"></i> Courses</a></li>
                 <li><a href="about.html"><i class="fa-solid fa-school"></i> About Us</a></li>
                 <li><a href="results.html"><i class="fa-solid fa-trophy"></i> Results</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Campus Gallery</a></li>
                 <li><a href="location.html"><i class="fa-solid fa-map-pin"></i> Location</a></li>
             </ul>
         </div>
@@ -404,6 +419,96 @@
         </div>
     </section>
 
+    <!-- ================= DIGITAL NOTICE BOARD SECTION ================= -->
+    <section class="notices-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-bullhorn"></i> Important Announcements
+                </div>
+                <h2 class="section-title">
+                    Digital <span>Notice Board</span>
+                </h2>
+                <p class="section-subtitle">
+                    Latest academic alerts, upcoming test schedules, admission deadlines, and parent meeting updates.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="notices-filter-tabs" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
+                <button class="filter-tab-btn active" data-filter="all">All Notices</button>
+                <button class="filter-tab-btn" data-filter="admission">Admissions</button>
+                <button class="filter-tab-btn" data-filter="tests">Test Schedules</button>
+                <button class="filter-tab-btn" data-filter="events">Workshops & Events</button>
+            </div>
+
+            <div class="notices-grid">
+                <!-- Notice 1 -->
+                <div class="notice-card" data-category="admission">
+                    <div>
+                        <div class="notice-card-top">
+                            <div class="notice-date-badge">
+                                <div class="notice-date-day">01</div>
+                                <div class="notice-date-month">SEP 2025</div>
+                            </div>
+                            <div class="notice-meta">
+                                <span class="notice-priority-pill pill-urgent">Urgent • Open</span>
+                                <h3>Admissions Open for Session 2025-2026</h3>
+                            </div>
+                        </div>
+                        <p>Registrations open for CBSE, ICSE, JAC (Classes K.G. to X) and Senior Secondary Science (XI & XII PCM/PCB). Limited batch sizes.</p>
+                    </div>
+                    <a href="admission.html" class="notice-card-link">
+                        <span>Fill Online Application Form</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Notice 2 -->
+                <div class="notice-card" data-category="tests">
+                    <div>
+                        <div class="notice-card-top">
+                            <div class="notice-date-badge">
+                                <div class="notice-date-day">07</div>
+                                <div class="notice-date-month">SEP 2025</div>
+                            </div>
+                            <div class="notice-meta">
+                                <span class="notice-priority-pill pill-academic">Test Alert</span>
+                                <h3>Sunday Board Mock Test Series (Class X & XII)</h3>
+                            </div>
+                        </div>
+                        <p>Comprehensive 3-hour subjective mock examination covering Mathematics & Science as per latest CBSE/ICSE board patterns. Reporting time: 9:45 AM.</p>
+                    </div>
+                    <a href="courses.html" class="notice-card-link">
+                        <span>View Test Syllabus</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Notice 3 -->
+                <div class="notice-card" data-category="events">
+                    <div>
+                        <div class="notice-card-top">
+                            <div class="notice-date-badge">
+                                <div class="notice-date-day">14</div>
+                                <div class="notice-date-month">SEP 2025</div>
+                            </div>
+                            <div class="notice-meta">
+                                <span class="notice-priority-pill pill-new">Special Workshop</span>
+                                <h3>Parent-Teacher Interaction & Doubt Workshop</h3>
+                            </div>
+                        </div>
+                        <p>Quarterly academic progress review meeting and 1-on-1 subject doubt clearing session with faculty and Director Rupesh Kumar Singh.</p>
+                    </div>
+                    <a href="location.html" class="notice-card-link">
+                        <span>Campus Timings & Location</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ================= DIRECTOR SPOTLIGHT ================= -->
     <section class="director-spotlight">
         <div class="container">
@@ -494,6 +599,71 @@
                 <a href="results.html" class="btn-secondary" style="background: var(--primary-700); color: #fff;">
                     <i class="fa-solid fa-trophy"></i>
                     <span>Explore Year-by-Year Results (1995 - 2026)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CAMPUS GALLERY SNAPSHOT ================= -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-camera-retro"></i> Life at Aim Point
+                </div>
+                <h2 class="section-title">
+                    Campus & <span>Facilities</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore our modern classrooms, personalized doubt desks, study library, and student awards.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Item 1: Director's Office -->
+                <div class="gallery-card" data-category="classrooms">
+                    <img src="director.jpg" alt="Director Office & Counseling Desk">
+                    <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-top-badge">Director's Desk</span>
+                        <div class="gallery-bottom-info">
+                            <h4>Director's Counseling Chamber</h4>
+                            <p>Personalized guidance with Rupesh Kr. Singh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Smart Interactive Classroom -->
+                <div class="gallery-card" data-category="classrooms">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1000&q=80" alt="Interactive Classroom">
+                    <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-top-badge">Lecture Hall</span>
+                        <div class="gallery-bottom-info">
+                            <h4>Interactive Lecture Classroom</h4>
+                            <p>Spacious seating with modern teaching aids</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: 1-on-1 Doubt Desk -->
+                <div class="gallery-card" data-category="doubt">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80" alt="1-on-1 Doubt Clearing Desk">
+                    <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-top-badge">Mentorship</span>
+                        <div class="gallery-bottom-info">
+                            <h4>1-on-1 Doubt Resolution Desk</h4>
+                            <p>Individual attention to ensure zero topic backlogs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="gallery.html" class="btn-primary">
+                    <i class="fa-solid fa-images"></i>
+                    <span>Explore Full Campus Gallery</span>
                 </a>
             </div>
         </div>
@@ -596,6 +766,7 @@
                         <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Courses</a></li>
                         <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
                         <li><a href="results.html"><i class="fa-solid fa-chevron-right"></i> Results & Achievers</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Campus Gallery</a></li>
                         <li><a href="location.html"><i class="fa-solid fa-chevron-right"></i> Location & Map</a></li>
                         <li><a href="admission.html"><i class="fa-solid fa-chevron-right"></i> Online Admission</a></li>
                     </ul>
@@ -637,6 +808,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- ================= LIGHTBOX MODAL ================= -->
+    <div id="gallery_lightbox" class="gallery-lightbox-modal">
+        <div class="lightbox-dialog">
+            <button id="lightbox_close" class="lightbox-close-btn" aria-label="Close Lightbox">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="lightbox-img-wrapper">
+                <img id="lightbox_img" src="" alt="Enlarged Campus View">
+            </div>
+            <div class="lightbox-footer">
+                <div>
+                    <div id="lightbox_title" class="lightbox-caption-title">Campus View</div>
+                    <div id="lightbox_desc" class="lightbox-caption-desc">AIM POINT STUDY CIRCLE Jamshedpur</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Floating WhatsApp Action -->
     <a href="https://wa.me/919334649269?text=Hello%20Aim%20Point%2C%20I%20would%20like%20to%20inquire%20about%20admission." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFaqAccordion();
     initFilterTabs();
     initPhotoUploadPreview();
+    initGalleryLightbox();
     initBackToTop();
 });
 
@@ -133,18 +134,18 @@ function initFaqAccordion() {
     });
 }
 
-/* ================= FILTER TABS (COURSES & RESULTS) ================= */
+/* ================= FILTER TABS (COURSES, RESULTS, NOTICES, GALLERY) ================= */
 function initFilterTabs() {
-    const filterTabContainers = document.querySelectorAll('.courses-filter-tabs');
+    const filterTabContainers = document.querySelectorAll('.courses-filter-tabs, .notices-filter-tabs, .gallery-filter-tabs');
     if (!filterTabContainers.length) return;
 
     filterTabContainers.forEach(container => {
         const filterButtons = container.querySelectorAll('.filter-tab-btn');
         const parentSection = container.closest('section') || document;
-        const grid = parentSection.querySelector('.courses-grid, .achievers-grid') || document.querySelector('.courses-grid, .achievers-grid');
+        const grid = parentSection.querySelector('.courses-grid, .achievers-grid, .notices-grid, .gallery-grid') || document.querySelector('.courses-grid, .achievers-grid, .notices-grid, .gallery-grid');
 
         if (!grid) return;
-        const cards = grid.querySelectorAll('.course-card, .achiever-card');
+        const cards = grid.querySelectorAll('.course-card, .achiever-card, .notice-card, .gallery-card');
 
         filterButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -172,6 +173,57 @@ function initFilterTabs() {
                 });
             });
         });
+    });
+}
+
+/* ================= CAMPUS GALLERY LIGHTBOX ================= */
+function initGalleryLightbox() {
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    const lightboxModal = document.getElementById('gallery_lightbox');
+    const lightboxImg = document.getElementById('lightbox_img');
+    const lightboxTitle = document.getElementById('lightbox_title');
+    const lightboxDesc = document.getElementById('lightbox_desc');
+    const lightboxClose = document.getElementById('lightbox_close');
+
+    if (!galleryCards.length || !lightboxModal) return;
+
+    galleryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const img = card.querySelector('img');
+            const title = card.querySelector('h4')?.textContent || 'Campus & Academic Life';
+            const desc = card.querySelector('p')?.textContent || 'AIM POINT STUDY CIRCLE';
+
+            if (img && lightboxImg) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = title;
+            }
+            if (lightboxTitle) lightboxTitle.textContent = title;
+            if (lightboxDesc) lightboxDesc.textContent = desc;
+
+            lightboxModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+            closeLightbox();
+        }
     });
 }
 
