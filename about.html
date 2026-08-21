@@ -2,318 +2,445 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>About Us | AIM POINT STUDY CIRCLE</title>
+    <meta name="description" content="Learn about AIM POINT STUDY CIRCLE - Our 30+ years legacy of academic excellence, experienced faculty, vision, mission, and message from Director Rupesh Kumar Singh.">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <span class="admission-badge-pill">
+                        <i class="fa-solid fa-sparkles"></i> Admissions Open 2025-26
+                    </span>
+                </div>
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call: <a href="tel:9334649269">+91 9334649269</a> / <a href="tel:9204941579">9204941579</a></span>
+                </div>
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ashok Nagar, Near Vivek Vidyalaya, Jamshedpur</span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/919334649269" target="_blank" title="WhatsApp Chat">
+                    <i class="fa-brands fa-whatsapp"></i> Quick Chat
+                </a>
+                <a href="location.html" title="Get Directions">
+                    <i class="fa-solid fa-map-location-dot"></i> Directions
+                </a>
+            </div>
+        </div>
+    </div>
 
-    <nav>
+    <!-- ================= STICKY HEADER & NAVBAR ================= -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-section">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="Aim Point Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>AIM POINT <span>STUDY CIRCLE</span></h1>
+                        <p>Thinking of Nation, Working on Education</p>
+                    </div>
+                </a>
 
-        <div class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li class="active"><a href="about.html">About Us</a></li>
+                    <li><a href="results.html">Results & Achievers</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
 
-            <div class="logo-section">
+                <div class="nav-actions">
+                    <a href="admission.html" class="btn-header-join">
+                        <i class="fa-solid fa-graduation-cap"></i> Apply Now
+                    </a>
+                    <button class="mobile-toggle" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-                <img src="logo.png" alt="logo">
+    <!-- ================= MOBILE DRAWER ================= -->
+    <div class="mobile-drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="mobile-drawer-header">
+                <div class="logo-text">
+                    <h1 style="font-size: 1.15rem; color: #fff;">AIM POINT</h1>
+                    <p style="font-size: 0.72rem; color: var(--accent-gold);">STUDY CIRCLE</p>
+                </div>
+                <button class="mobile-drawer-close" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="courses.html"><i class="fa-solid fa-book-open"></i> Courses</a></li>
+                <li class="active"><a href="about.html"><i class="fa-solid fa-school"></i> About Us</a></li>
+                <li><a href="results.html"><i class="fa-solid fa-trophy"></i> Results</a></li>
+                <li><a href="location.html"><i class="fa-solid fa-map-pin"></i> Location</a></li>
+            </ul>
+        </div>
+        <div class="mobile-drawer-footer">
+            <a href="admission.html" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px;">
+                <i class="fa-solid fa-user-plus"></i> Join / Admission
+            </a>
+        </div>
+    </div>
 
-                <div>
+    <!-- ================= ABOUT HERO ================= -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="section-pill" style="background: rgba(255,255,255,0.1); color: var(--accent-gold); margin: 0 auto 16px auto;">
+                <i class="fa-solid fa-landmark"></i> Estd. 1993
+            </div>
+            <h1>About AIM POINT STUDY CIRCLE</h1>
+            <p class="estd">Over Three Decades of Educational Pioneering</p>
+            <h2>
+                Empowering Students Through Quality Education, Discipline, and Unwavering Academic Excellence
+            </h2>
+        </div>
+    </section>
 
-                    <h1>AIM POINT STUDY CIRCLE</h1>
+    <!-- ================= STATS SECTION ================= -->
+    <div class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="32">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="5000">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Successful Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">State Rank Holders</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">%</span>
+                    </div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <p>Thinking of Nation, Working on Education</p>
+    <!-- ================= JOURNEY & TIMELINE ================= -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Our Legacy
+                </div>
+                <h2 class="section-title">
+                    Our Historic <span>Journey</span>
+                </h2>
+                <p class="section-subtitle">
+                    Founded in 1993, AIM POINT STUDY CIRCLE has nurtured generations of young minds into board toppers, professionals, and responsible nation-builders.
+                </p>
+            </div>
 
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1993</div>
+                        <h3>The Inception</h3>
+                        <p>Established with a dedicated mission to bring high-standard, structured coaching for school students in Jamshedpur.</p>
+                    </div>
                 </div>
 
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2000</div>
+                        <h3>Board Mastery & Expansion</h3>
+                        <p>Expanded to full-scale CBSE, ICSE, and JAC board programs with specialized faculty for Science and Mathematics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2012</div>
+                        <h3>Senior Secondary Wing</h3>
+                        <p>Launched dedicated XI & XII Science batches (Physics, Chemistry, Maths, Biology) with foundational training for competitive entrance exams.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2026 & Beyond</div>
+                        <h3>Smart & Hybrid Learning</h3>
+                        <p>Serving over 5,000 alumni worldwide, continuously modernizing study materials and digital testing while preserving individual mentorship.</p>
+                    </div>
+                </div>
             </div>
-
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="courses.html">Courses</a></li>
-
-                <li class="active"><a href="about.html">About</a></li>
-
-                <li><a href="results.html">Results</a></li>
-                <li>
-    <a href="location.html">Location</a>
-</li>
-
-            </ul>
-
         </div>
-
-    </nav>
-
-
-
-    <!-- ================= HERO ================= -->
-
-    <section class="about-hero">
-
-        <div class="about-overlay">
-
-            <h1>ABOUT AIM POINT STUDY CIRCLE</h1>
-
-            <p>Since 1993</p>
-
-            <h2>
-                Empowering Students Through Quality Education,
-                Discipline & Excellence
-            </h2>
-
-        </div>
-
     </section>
-
-
-
-    <!-- ================= HISTORY ================= -->
-
-    <section class="history">
-
-        <h2>Our Journey</h2>
-
-        <p>
-
-            Founded in 1993, AIM POINT STUDY CIRCLE has been dedicated
-            to providing quality education and academic excellence.
-            Over the years, the institute has guided thousands of
-            students toward success through disciplined learning,
-            experienced faculty, and personal attention.
-
-            Our commitment to excellence has made us one of the most
-            trusted educational institutions in the region.
-
-        </p>
-
-    </section>
-
-
 
     <!-- ================= VISION MISSION VALUES ================= -->
-
-    <section class="vmv">
-
-        <div class="vmv-card">
-
-            <h2>Vision</h2>
-
-            <p>
-                To become a leading educational institution that inspires
-                excellence, innovation and lifelong learning.
-            </p>
-
-        </div>
-
-        <div class="vmv-card">
-
-            <h2>Mission</h2>
-
-            <p>
-                To provide quality education, develop critical thinking,
-                and prepare students for academic and professional success.
-            </p>
-
-        </div>
-
-        <div class="vmv-card">
-
-            <h2>Values</h2>
-
-            <p>
-                Excellence, Integrity, Discipline,
-                Innovation and Respect.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= WHY CHOOSE US ================= -->
-
-    <section class="why-us">
-
-        <h1>Why Choose AIM POINT?</h1>
-
-        <div class="why-container">
-
-            <div class="why-card">
-
-                <h2>🎓 Experienced Faculty</h2>
-
-                <p>
-                    Learn from dedicated and experienced educators.
+    <section class="features-section" style="background: #ffffff;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-compass"></i> Guiding Principles
+                </div>
+                <h2 class="section-title">
+                    Vision, Mission & <span>Core Values</span>
+                </h2>
+                <p class="section-subtitle">
+                    Our guiding compass drives every classroom session, test evaluation, and mentorship interaction.
                 </p>
-
             </div>
 
-            <div class="why-card">
+            <div class="vmv-grid">
+                <div class="vmv-card vision">
+                    <div class="vmv-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the most trusted educational sanctuary in the region, inspiring intellectual curiosity, unwavering integrity, and lifelong academic achievement in every student.
+                    </p>
+                </div>
 
-                <h2>📚 Study Material</h2>
+                <div class="vmv-card mission">
+                    <div class="vmv-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To deliver top-tier education with personalized care, build rock-solid foundational concepts, cultivate discipline, and prepare students to conquer both school boards and future careers.
+                    </p>
+                </div>
 
-                <p>
-                    Comprehensive notes and learning resources.
+                <div class="vmv-card values">
+                    <div class="vmv-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Our Core Values</h3>
+                    <p>
+                        Excellence in instruction, relentless dedication, moral discipline, student-first mentorship, continuous pedagogical innovation, and mutual respect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DIRECTOR'S MESSAGE SECTION ================= -->
+    <section class="director-spotlight">
+        <div class="container">
+            <div class="director-grid">
+                <div class="director-card-visual">
+                    <div class="director-photo-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3>Rupesh Kumar Singh</h3>
+                    <p>Founder & Director</p>
+                    <div class="director-badge-tags">
+                        <span>AIM POINT STUDY CIRCLE</span>
+                        <span>Since 1993</span>
+                    </div>
+                </div>
+
+                <div class="director-message-content">
+                    <div class="section-pill" style="background: rgba(255,255,255,0.1); color: var(--accent-gold);">
+                        <i class="fa-solid fa-pen-nib"></i> Director's Address
+                    </div>
+                    <h2>Message From The Director</h2>
+                    <div class="director-quote">
+                        "Education is not merely the learning of facts, but the training of the mind to think, analyze, and lead."
+                    </div>
+                    <p>
+                        Dear Students and Parents,<br><br>
+                        Welcome to AIM POINT STUDY CIRCLE. When we laid the cornerstone of this institute in 1993, our dream was simple yet profound: to create an environment where every student feels valued, challenged, and guided toward their highest potential.
+                    </p>
+                    <p>
+                        We firmly believe that no two students learn in the same way. That is why our curriculum balances rigorous classroom teaching with compassionate, individualized doubt resolution. We thank all parents for their continued trust and assure you that your child's academic journey is in caring, dedicated hands.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h4 style="color: #fff; font-size: 1.2rem;">Rupesh Kumar Singh</h4>
+                        <span style="color: var(--accent-gold); font-size: 0.9rem;">Director, AIM POINT STUDY CIRCLE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PEDAGOGY / TEACHING METHODOLOGY ================= -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-graduation-cap"></i> Our Methodology
+                </div>
+                <h2 class="section-title">
+                    The Aim Point <span>Success Formula</span>
+                </h2>
+                <p class="section-subtitle">
+                    A holistic 4-step pedagogical system designed to turn potential into performance.
                 </p>
-
             </div>
 
-            <div class="why-card">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3>1. Concept Clarity</h3>
+                    <p>We deconstruct complex scientific and mathematical concepts into intuitive, easy-to-grasp fundamentals before moving into advanced problem solving.</p>
+                </div>
 
-                <h2>🏆 Consistent Results</h2>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h3>2. Daily Practice (DPP)</h3>
+                    <p>Daily and weekly problem sheets ensure regular practice, reinforcing lessons taught in class and building computational speed and accuracy.</p>
+                </div>
 
-                <p>
-                    Proven academic success year after year.
-                </p>
-
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3>3. One-on-One Doubt Sessions</h3>
+                    <p>Dedicated question-answering hours allow students to resolve every confusion without hesitation, ensuring zero backlog of difficult topics.</p>
+                </div>
             </div>
 
-            <div class="why-card">
-
-                <h2>👨‍🏫 Personal Attention</h2>
-
-                <p>
-                    Individual guidance for every student.
-                </p>
-
+            <!-- CTA Banner -->
+            <div class="cta-banner" style="margin-top: 50px;">
+                <h2>Experience the Aim Point Difference Firsthand</h2>
+                <p>Visit our institute or speak directly with Director Rupesh Kr. Singh to chart your academic roadmap.</p>
+                <div class="cta-banner-buttons">
+                    <a href="admission.html" class="btn-primary">
+                        <i class="fa-solid fa-file-signature"></i> Apply for Admission
+                    </a>
+                    <a href="location.html" class="btn-secondary">
+                        <i class="fa-solid fa-location-arrow"></i> Visit Our Campus
+                    </a>
+                </div>
             </div>
-
         </div>
-
     </section>
-
-
-
-    <!-- ================= MESSAGE TO STUDENTS ================= -->
-
-    <section class="student-message">
-
-        <h1>Message To Students</h1>
-
-        <p>
-
-            Education is the foundation of a successful future.
-            Every challenge you face is an opportunity to learn and grow.
-
-            Stay disciplined, work hard, and believe in yourself.
-
-            Success is achieved through consistency,
-            dedication and determination.
-
-            At AIM POINT STUDY CIRCLE, we are committed to helping
-            you achieve your goals and unlock your true potential.
-
-        </p>
-
-    </section>
-
-
-
-    <!-- ================= DIRECTOR MESSAGE ================= -->
-
-    <section class="director-section">
-
-        <div class="director-photo">
-
-            Director Photo Here
-
-        </div>
-
-        <div class="director-message">
-
-            <h1>Message From The Director</h1>
-
-            <p>
-
-                Dear Students and Parents,
-
-                Welcome to AIM POINT STUDY CIRCLE.
-
-                Our mission is to provide quality education that helps
-                students achieve academic excellence and personal growth.
-
-                We believe that every student possesses unique potential,
-                and our responsibility is to guide them toward success
-                through proper mentorship, dedication and hard work.
-
-                We thank all students and parents for their trust and support.
-
-            </p>
-
-            <h3>
-                Rupesh Kumar Singh
-                <br>
-                Director
-            </h3>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= ACHIEVEMENTS ================= -->
-
-    <section class="achievements">
-
-        <div class="achievement-card">
-
-            <h1>30+</h1>
-
-            <p>Years of Excellence</p>
-
-        </div>
-
-        <div class="achievement-card">
-
-            <h1>5000+</h1>
-
-            <p>Successful Students</p>
-
-        </div>
-
-        <div class="achievement-card">
-
-            <h1>100+</h1>
-
-            <p>State Rank Holders</p>
-
-        </div>
-
-        <div class="achievement-card">
-
-            <h1>100%</h1>
-
-            <p>Success Rate</p>
-
-        </div>
-
-    </section>
-
-
 
     <!-- ================= FOOTER ================= -->
-
     <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>AIM POINT <span>STUDY CIRCLE</span></h2>
+                    <p class="tagline">Thinking of Nation, Working on Education</p>
+                    <p class="desc">
+                        Providing premier academic coaching from Class K.G. to XII since 1993. Empowering students with the knowledge, discipline, and confidence to succeed.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/919334649269" class="footer-social-btn" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="location.html" class="footer-social-btn" title="Location"><i class="fa-solid fa-map-location-dot"></i></a>
+                        <a href="tel:9334649269" class="footer-social-btn" title="Call"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
 
-        <h2>AIM POINT STUDY CIRCLE</h2>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="results.html"><i class="fa-solid fa-chevron-right"></i> Results & Achievers</a></li>
+                        <li><a href="location.html"><i class="fa-solid fa-chevron-right"></i> Location & Map</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-chevron-right"></i> Online Admission</a></li>
+                    </ul>
+                </div>
 
-        <p>Thinking of Nation, Working on Education</p>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> CBSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> ICSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> JAC Board (VIII-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> XI-XII Science (PCM/PCB)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Board Test Series</a></li>
+                    </ul>
+                </div>
 
-        <p>© 2026 All Rights Reserved</p>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div><strong>Director:</strong> Rupesh Kr. Singh</div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div><a href="tel:9334649269">+91 9334649269</a><br><a href="tel:9204941579">+91 9204941579</a></div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>Ashok Nagar, Near Vivek Vidyalaya, Chhota Govindpur, Jamshedpur - 15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="footer-bottom">
+                <div>© 2026 AIM POINT STUDY CIRCLE. All Rights Reserved.</div>
+                <div>Excellence in Education Since 1993</div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/919334649269?text=Hello%20Aim%20Point%2C%20I%20would%20like%20to%20inquire%20about%20your%20courses." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top Button -->
+    <a href="#" class="back-to-top" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>

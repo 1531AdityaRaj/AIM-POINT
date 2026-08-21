@@ -2,197 +2,645 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM POINT STUDY CIRCLE | Premier Coaching Institute (K.G. - XII)</title>
+    <meta name="description" content="AIM POINT STUDY CIRCLE - Leading coaching institute in Jamshedpur since 1993 for CBSE, ICSE, JAC boards (K.G. to XII) & competitive foundations.">
+    <meta name="keywords" content="Aim Point Study Circle, Coaching Institute Jamshedpur, CBSE Coaching, ICSE Coaching, JAC Board, Class 10, Class 12 Science, Rupesh Kumar Singh">
 
-    <title>AIM POINT STUDY CIRCLE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <nav>
-
-        <div class="navbar">
-
-            <div class="logo-section">
-
-                <img src="logo.png" alt="Logo">
-
-                <div>
-
-                    <h1>AIM POINT STUDY CIRCLE</h1>
-
-                    <p>Thinking of Nation, Working on Education</p>
-
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <span class="admission-badge-pill">
+                        <i class="fa-solid fa-sparkles"></i> Admissions Open 2025-26
+                    </span>
                 </div>
-
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call: <a href="tel:9334649269">+91 9334649269</a> / <a href="tel:9204941579">9204941579</a></span>
+                </div>
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ashok Nagar, Near Vivek Vidyalaya, Jamshedpur</span>
+                </div>
             </div>
-
-            <ul>
-
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="courses.html">Courses</a>
-                </li>
-
-                <li>
-    <a href="about.html">About</a>
-</li>
-
-                <li>
-    <a href="results.html">Results</a>
-</li>
- <li>
-    <a href="location.html">Location</a>
-</li>
-            </ul>
-
-           
-
+            <div class="top-bar-right">
+                <a href="https://wa.me/919334649269" target="_blank" title="WhatsApp Chat">
+                    <i class="fa-brands fa-whatsapp"></i> Quick Chat
+                </a>
+                <a href="location.html" title="Get Directions">
+                    <i class="fa-solid fa-map-location-dot"></i> Directions
+                </a>
+            </div>
         </div>
+    </div>
 
-    </nav>
+    <!-- ================= STICKY HEADER & NAVBAR ================= -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-section">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="Aim Point Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>AIM POINT <span>STUDY CIRCLE</span></h1>
+                        <p>Thinking of Nation, Working on Education</p>
+                    </div>
+                </a>
 
+                <ul class="nav-menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="results.html">Results & Achievers</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
 
-
-    <section class="hero">
-
-        <div class="overlay">
-
-            <div class="hero-content">
-
-                <p class="tagline">
-                    Since 1993 • Excellence is Our Tradition, Creating Toppers is Our Passion.
-                </p>
-
-                <h1>WELCOME TO</h1>
-
-                <h2>AIM POINT</h2>
-
-                <h2>STUDY CIRCLE</h2>
-
-                <p class="description">
-
-                    The Best Institute For Class K.G. - XII
-
-                    <br><br>
-
-                    CBSE • ICSE • JAC
-
-                </p>
-
-                <div class="buttons">
-
-                    
-
-                    <a href="admission.html">
-    <button class="join-btn">
-        Join Now
-    </button>
-</a>
-
+                <div class="nav-actions">
+                    <a href="admission.html" class="btn-header-join">
+                        <i class="fa-solid fa-graduation-cap"></i> Apply Now
+                    </a>
+                    <button class="mobile-toggle" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
                 </div>
+            </nav>
+        </div>
+    </header>
 
-                <div class="contact-box">
+    <!-- ================= MOBILE DRAWER ================= -->
+    <div class="mobile-drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="mobile-drawer-header">
+                <div class="logo-text">
+                    <h1 style="font-size: 1.15rem; color: #fff;">AIM POINT</h1>
+                    <p style="font-size: 0.72rem; color: var(--accent-gold);">STUDY CIRCLE</p>
+                </div>
+                <button class="mobile-drawer-close" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="courses.html"><i class="fa-solid fa-book-open"></i> Courses</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-school"></i> About Us</a></li>
+                <li><a href="results.html"><i class="fa-solid fa-trophy"></i> Results</a></li>
+                <li><a href="location.html"><i class="fa-solid fa-map-pin"></i> Location</a></li>
+            </ul>
+        </div>
+        <div class="mobile-drawer-footer">
+            <a href="admission.html" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px;">
+                <i class="fa-solid fa-user-plus"></i> Join / Admission
+            </a>
+            <div style="font-size: 0.8rem; color: var(--text-light); text-align: center;">
+                📞 +91 9334649269 | Jamshedpur
+            </div>
+        </div>
+    </div>
 
-                    <h3>Director : Rupesh Kr. Singh</h3>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-pill">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Since 1993 • Over 3 Decades of Academic Legacy</span>
+                    </div>
 
-                    <p>📞 9334649269</p>
+                    <h1 class="hero-title">
+                        Excellence is Our Tradition, <br>
+                        <span class="highlight-gold">Creating Toppers</span> is Our Passion.
+                    </h1>
 
-                    <p>📞 9204941579</p>
-
-                    <p class="address">
-                        📍 Ashok Nagar, Near Vivek Vidyalaya
-                        <br>
-                           &nbsp;&nbsp;&nbsp;Chhota Govindpur, Jamshedpur - 15
+                    <p class="hero-subtitle">
+                        Premier educational coaching for <strong>Class K.G. to XII</strong>. Empowering students with concept clarity, disciplined mentorship, and proven competitive edge.
                     </p>
 
+                    <div class="board-tags">
+                        <span class="board-tag featured"><i class="fa-solid fa-star"></i> CBSE BOARD</span>
+                        <span class="board-tag featured"><i class="fa-solid fa-star"></i> ICSE BOARD</span>
+                        <span class="board-tag featured"><i class="fa-solid fa-star"></i> JAC BOARD</span>
+                        <span class="board-tag"><i class="fa-solid fa-atom"></i> XI & XII SCIENCE</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="admission.html" class="btn-primary">
+                            <span>Enrol for Admission</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="courses.html" class="btn-secondary">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Explore Courses</span>
+                        </a>
+                    </div>
                 </div>
 
+                <div class="hero-card-wrapper">
+                    <div class="hero-card">
+                        <div class="director-badge-top">
+                            <div class="director-avatar-icon">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="director-info">
+                                <h3>Rupesh Kr. Singh</h3>
+                                <p><i class="fa-solid fa-certificate"></i> Director & Chief Mentor</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-card-contacts">
+                            <a href="tel:9334649269" class="contact-pill">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="pill-text">
+                                    <small>Direct Line</small>
+                                    <strong>+91 9334649269</strong>
+                                </div>
+                            </a>
+                            <a href="tel:9204941579" class="contact-pill">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="pill-text">
+                                    <small>Administrative Desk</small>
+                                    <strong>+91 9204941579</strong>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="hero-card-address">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <div>
+                                <strong>Institute Campus:</strong><br>
+                                Ashok Nagar, Near Vivek Vidyalaya,<br>
+                                Chhota Govindpur, Jamshedpur - 831015
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
 
-
-
-    <section class="features">
-
-        <div class="cards">
-
-            <div class="card">
-
-                <div class="icon">📘</div>
-
-                <h2>Quality Education</h2>
-
-                <p>
-                    Comprehensive study material designed by expert faculty.
-                </p>
-
+    <!-- ================= STATS COUNTER BAR ================= -->
+    <div class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="32">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Years of Academic Excellence</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="5000">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Successful Students Guided</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">State & City Rank Holders</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">%</span>
+                    </div>
+                    <div class="stat-label">Dedicated Board Success Track</div>
+                </div>
             </div>
-
-            <div class="card">
-
-                <div class="icon">👨‍🏫</div>
-
-                <h2>Expert Faculty</h2>
-
-                <p>
-                    Learn from experienced and dedicated educators.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <div class="icon">🎯</div>
-
-                <h2>Exam Focused</h2>
-
-                <p>
-                    Special focus on competitive exams and career goals.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <div class="icon">🏆</div>
-
-                <h2>Proven Results</h2>
-
-                <p>
-                    Consistent results and student success is our pride.
-                </p>
-
-            </div>
-
         </div>
+    </div>
 
+    <!-- ================= WHY CHOOSE US / FEATURES ================= -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-shield-halved"></i> Why Choose Aim Point
+                </div>
+                <h2 class="section-title">
+                    Building Strong Foundations for <span>Lifelong Success</span>
+                </h2>
+                <p class="section-subtitle">
+                    We combine time-tested teaching methodologies with modern educational techniques to ensure every student achieves their highest academic potential.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <h3>Quality Study Material</h3>
+                    <p>Comprehensive, chapter-wise notes and practice sheets meticulously curated by subject experts following updated board syllabi.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn directly from passionate, experienced teachers with decades of specialized subject teaching and board mentoring expertise.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3>Exam-Focused Approach</h3>
+                    <p>Rigorous test series, previous 10-year question analyses, and targeted answer-writing practice designed to maximize scores.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3>Regular Weekly Assessments</h3>
+                    <p>Continuous evaluation through topic tests, comprehensive report cards, and parent-teacher updates for steady improvement.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <h3>Personal Attention</h3>
+                    <p>Small batch sizes ensuring individual doubt-clearing sessions, personalized guidance, and customized pacing for every child.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3>Proven Track Record</h3>
+                    <p>Over 30 years of consistent 90%+ board results, district toppers, and admissions into prestigious engineering and medical colleges.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ================= POPULAR COURSES PREVIEW ================= -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-graduation-cap"></i> Academic Programs
+                </div>
+                <h2 class="section-title">
+                    Courses Offered For <span>All Boards</span>
+                </h2>
+                <p class="section-subtitle">
+                    Structured programs designed to foster deep conceptual understanding and peak exam readiness.
+                </p>
+            </div>
 
+            <div class="courses-grid">
+                <!-- CBSE Course Card -->
+                <div class="course-card featured-course">
+                    <span class="course-badge">High Demand</span>
+                    <div>
+                        <div class="course-header">
+                            <h3 class="course-board-name">CBSE BOARD</h3>
+                            <span class="course-classes">Classes K.G. to Class X</span>
+                        </div>
+                        <ul class="course-features-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Complete NCERT & Exemplar coverage</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Special focus on Maths, Science & English</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Chapter-wise DPPs and Weekly Mock Tests</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Dedicated Board Exam Revision Camp</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-footer">
+                        <a href="admission.html" class="course-btn-action">
+                            <span>Enrol for CBSE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ICSE Course Card -->
+                <div class="course-card">
+                    <span class="course-badge">Comprehensive</span>
+                    <div>
+                        <div class="course-header">
+                            <h3 class="course-board-name">ICSE BOARD</h3>
+                            <span class="course-classes">Classes K.G. to Class X</span>
+                        </div>
+                        <ul class="course-features-list">
+                            <li><i class="fa-solid fa-circle-check"></i> In-depth syllabus breakdown & analytical mastery</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Physics, Chemistry, Biology & Pure Maths</li>
+                            <li><i class="fa-solid fa-circle-check"></i> English Grammar & Literature special batches</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Previous years' board question drill</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-footer">
+                        <a href="admission.html" class="course-btn-action">
+                            <span>Enrol for ICSE</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- JAC & Senior Science Card -->
+                <div class="course-card featured-course">
+                    <span class="course-badge">State Special</span>
+                    <div>
+                        <div class="course-header">
+                            <h3 class="course-board-name">JAC BOARD & XI-XII</h3>
+                            <span class="course-classes">Classes VIII - X & XI-XII Science</span>
+                        </div>
+                        <ul class="course-features-list">
+                            <li><i class="fa-solid fa-circle-check"></i> JAC Board State Rankers preparation</li>
+                            <li><i class="fa-solid fa-circle-check"></i> XI & XII: Physics, Chemistry, Maths & Biology</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Foundation for JEE / NEET / Olympiads</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Regular Numerical solving & Formula workshops</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-footer">
+                        <a href="admission.html" class="course-btn-action">
+                            <span>Enrol for Senior / JAC</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 45px;">
+                <a href="courses.html" class="btn-primary">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>View All Detailed Courses & Syllabi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DIRECTOR SPOTLIGHT ================= -->
+    <section class="director-spotlight">
+        <div class="container">
+            <div class="director-grid">
+                <div class="director-card-visual">
+                    <div class="director-photo-placeholder">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3>Rupesh Kumar Singh</h3>
+                    <p>Director, AIM POINT STUDY CIRCLE</p>
+                    <div class="director-badge-tags">
+                        <span>30+ Yrs Mentorship</span>
+                        <span>Academic Visionary</span>
+                    </div>
+                </div>
+
+                <div class="director-message-content">
+                    <div class="section-pill" style="background: rgba(255,255,255,0.1); color: var(--accent-gold);">
+                        <i class="fa-solid fa-quote-left"></i> Director's Message
+                    </div>
+                    <h2>"Thinking of Nation, Working on Education"</h2>
+                    <div class="director-quote">
+                        "Every child is born with limitless potential. Our mission at Aim Point is not just to teach subjects, but to ignite curiosity, instill discipline, and build character that lasts a lifetime."
+                    </div>
+                    <p>
+                        Since 1993, we have strived tirelessly to provide accessible, high-standard education in Jamshedpur. When a student joins Aim Point, they join a family committed to their academic brilliance, emotional resilience, and future career milestones.
+                    </p>
+                    <a href="about.html" class="btn-primary">
+                        <span>Read Our Full Story</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACHIEVERS SNAPSHOT ================= -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-medal"></i> Hall of Fame
+                </div>
+                <h2 class="section-title">
+                    Our Stellar <span>Board Achievers</span>
+                </h2>
+                <p class="section-subtitle">
+                    Meet some of the outstanding students who made us and their parents proud with exceptional board percentages.
+                </p>
+            </div>
+
+            <div class="achievers-grid">
+                <div class="achiever-card">
+                    <div class="medal-badge">🥇</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Board Topper</h3>
+                    <div class="achiever-score">98.4%</div>
+                    <p class="achiever-school">Vivek Vidyalaya, Jamshedpur</p>
+                    <span class="achiever-badge-board">CBSE Class X</span>
+                </div>
+
+                <div class="achiever-card">
+                    <div class="medal-badge">🥈</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Distinction Achiever</h3>
+                    <div class="achiever-score">97.8%</div>
+                    <p class="achiever-school">VIG English School</p>
+                    <span class="achiever-badge-board">ICSE Class X</span>
+                </div>
+
+                <div class="achiever-card">
+                    <div class="medal-badge">🥉</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">State Rank Holder</h3>
+                    <div class="achiever-score">97.1%</div>
+                    <p class="achiever-school">JAC Board Topper</p>
+                    <span class="achiever-badge-board">JAC Class X</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="results.html" class="btn-secondary" style="background: var(--primary-700); color: #fff;">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Explore Year-by-Year Results (1995 - 2026)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-circle-question"></i> Common Questions
+                </div>
+                <h2 class="section-title">
+                    Frequently Asked <span>Questions</span>
+                </h2>
+                <p class="section-subtitle">
+                    Quick answers to common queries regarding admissions, classes, and teaching methodology.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>Which classes and boards are taught at AIM POINT STUDY CIRCLE?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide comprehensive coaching for students from <strong>Class K.G. to Class XII</strong> across <strong>CBSE, ICSE, and JAC boards</strong>, as well as senior secondary science streams (Physics, Chemistry, Maths, Biology).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I register or take admission?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can fill out our online <a href="admission.html" style="color: var(--primary-500); font-weight: bold;">Admission Form</a> directly through the website, or visit our campus at Ashok Nagar, Near Vivek Vidyalaya, Chhota Govindpur, Jamshedpur.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are separate doubt-clearing sessions conducted?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! In addition to regular lecture sessions, we offer dedicated one-on-one doubt clearing periods and weekly assessment workshops to ensure no concept is left unresolved.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the batch timings?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We operate morning and evening batches to comfortably suit school schedules. Detailed batch timings based on your class and board will be provided upon admission inquiry.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="cta-banner">
+                <h2>Ready to Start Your Journey Towards Academic Excellence?</h2>
+                <p>Join hundreds of motivated students at Aim Point Study Circle. Admissions open for the upcoming session.</p>
+                <div class="cta-banner-buttons">
+                    <a href="admission.html" class="btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Apply Online Now
+                    </a>
+                    <a href="tel:9334649269" class="btn-secondary">
+                        <i class="fa-solid fa-phone"></i> Call Director (+91 9334649269)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>AIM POINT <span>STUDY CIRCLE</span></h2>
+                    <p class="tagline">Thinking of Nation, Working on Education</p>
+                    <p class="desc">
+                        Providing premier academic coaching from Class K.G. to XII since 1993. Empowering students with the knowledge, discipline, and confidence to succeed.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/919334649269" class="footer-social-btn" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="location.html" class="footer-social-btn" title="Location"><i class="fa-solid fa-map-location-dot"></i></a>
+                        <a href="tel:9334649269" class="footer-social-btn" title="Call"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
 
-        <h2>AIM POINT STUDY CIRCLE</h2>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="results.html"><i class="fa-solid fa-chevron-right"></i> Results & Achievers</a></li>
+                        <li><a href="location.html"><i class="fa-solid fa-chevron-right"></i> Location & Map</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-chevron-right"></i> Online Admission</a></li>
+                    </ul>
+                </div>
 
-        <p>Thinking of Nation, Working on Education</p>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> CBSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> ICSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> JAC Board (VIII-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> XI-XII Science (PCM/PCB)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Board Test Series</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div><strong>Director:</strong> Rupesh Kr. Singh</div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div><a href="tel:9334649269">+91 9334649269</a><br><a href="tel:9204941579">+91 9204941579</a></div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>Ashok Nagar, Near Vivek Vidyalaya, Chhota Govindpur, Jamshedpur - 15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 AIM POINT STUDY CIRCLE. All Rights Reserved.</div>
+                <div>Excellence in Education Since 1993</div>
+            </div>
+        </div>
     </footer>
-<a href="https://wa.me/919334649269" class="whatsapp-btn" target="_blank">
 
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/919334649269?text=Hello%20Aim%20Point%2C%20I%20would%20like%20to%20inquire%20about%20admission." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-</a>
+    <!-- Back To Top Button -->
+    <a href="#" class="back-to-top" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>

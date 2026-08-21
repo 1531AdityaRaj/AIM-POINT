@@ -2,743 +2,426 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results & Hall of Fame | AIM POINT STUDY CIRCLE</title>
+    <meta name="description" content="Explore the outstanding board results, toppers, and state rankers created by AIM POINT STUDY CIRCLE Jamshedpur since 1993.">
 
-    <title>Results | AIM POINT STUDY CIRCLE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <nav>
-
-        <div class="navbar">
-
-            <div class="logo-section">
-
-                <img src="logo.png" alt="logo">
-
-                <div>
-
-                    <h1>AIM POINT STUDY CIRCLE</h1>
-
-                    <p>Thinking of Nation, Working on Education</p>
-
+    <!-- ================= TOP INFO BAR ================= -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="top-bar-item">
+                    <span class="admission-badge-pill">
+                        <i class="fa-solid fa-sparkles"></i> Admissions Open 2025-26
+                    </span>
                 </div>
-
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call: <a href="tel:9334649269">+91 9334649269</a> / <a href="tel:9204941579">9204941579</a></span>
+                </div>
+                <div class="top-bar-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Ashok Nagar, Near Vivek Vidyalaya, Jamshedpur</span>
+                </div>
             </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/919334649269" target="_blank" title="WhatsApp Chat">
+                    <i class="fa-brands fa-whatsapp"></i> Quick Chat
+                </a>
+                <a href="location.html" title="Get Directions">
+                    <i class="fa-solid fa-map-location-dot"></i> Directions
+                </a>
+            </div>
+        </div>
+    </div>
 
-            <ul>
+    <!-- ================= STICKY HEADER & NAVBAR ================= -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-section">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="Aim Point Logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>AIM POINT <span>STUDY CIRCLE</span></h1>
+                        <p>Thinking of Nation, Working on Education</p>
+                    </div>
+                </a>
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="active"><a href="results.html">Results</a></li>
-                <li>
-    <a href="location.html">Location</a>
-</li>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="results.html">Results & Achievers</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
 
+                <div class="nav-actions">
+                    <a href="admission.html" class="btn-header-join">
+                        <i class="fa-solid fa-graduation-cap"></i> Apply Now
+                    </a>
+                    <button class="mobile-toggle" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MOBILE DRAWER ================= -->
+    <div class="mobile-drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="mobile-drawer-header">
+                <div class="logo-text">
+                    <h1 style="font-size: 1.15rem; color: #fff;">AIM POINT</h1>
+                    <p style="font-size: 0.72rem; color: var(--accent-gold);">STUDY CIRCLE</p>
+                </div>
+                <button class="mobile-drawer-close" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="courses.html"><i class="fa-solid fa-book-open"></i> Courses</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-school"></i> About Us</a></li>
+                <li class="active"><a href="results.html"><i class="fa-solid fa-trophy"></i> Results</a></li>
+                <li><a href="location.html"><i class="fa-solid fa-map-pin"></i> Location</a></li>
             </ul>
-
         </div>
+        <div class="mobile-drawer-footer">
+            <a href="admission.html" class="btn-primary" style="width: 100%; justify-content: center; padding: 12px;">
+                <i class="fa-solid fa-user-plus"></i> Join / Admission
+            </a>
+        </div>
+    </div>
 
-    </nav>
-
-
-
-    <section class="results-page">
-
-        <h1 class="results-title">OUR ACHIEVERS</h1>
-
-        <p class="results-subtitle">
-            Consistent Excellence Since 1995
-        </p>
-
-
-
-        <!-- 2026 -->
-
-        <div class="year-section">
-
-            <h2>🏆 Results 2026</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
+    <!-- ================= RESULTS HERO ================= -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="section-pill" style="background: rgba(255,255,255,0.1); color: var(--accent-gold); margin: 0 auto 16px auto;">
+                <i class="fa-solid fa-trophy"></i> Hall of Fame
             </div>
-
+            <h1>Our Star Achievers & Board Toppers</h1>
+            <p class="estd">A Glorious Legacy of Academic Excellence Since 1993</p>
+            <h2>
+                Celebrating the dedication, discipline, and remarkable achievements of our students across CBSE, ICSE, and JAC boards.
+            </h2>
         </div>
-
-
-
-        <!-- 2025 -->
-
-        <div class="year-section">
-
-            <h2>🏆 Results 2025</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        
-
-        <!-- 2024 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2025</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2023 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2023</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2022 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2022</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2021 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2021</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2020 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2020</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2019 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2019</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2018 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2018</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2017 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2017</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 2016 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2016</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- 2015 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2015</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student2.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>97.4%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-                <div class="topper-card">
-
-                    <img src="student3.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>96.8%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- 2014 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2014</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-
-<!-- 2013 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2013</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-<!-- 2012 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2012</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-<!-- 2011 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2011</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-<!-- 2010 -->
-         <div class="year-section">
-
-            <h2>🏆 Results 2010</h2>
-
-            <div class="topper-container">
-
-                <div class="topper-card">
-
-                    <img src="student1.jpg" alt="Topper">
-
-                    <h3>Student Name</h3>
-
-                    <p>98.1%</p>
-
-                    <span>School Name</span>
-
-                </div>
-
-
     </section>
 
+    <!-- ================= PERFORMANCE SUMMARY METRICS ================= -->
+    <div class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="98">0</span>
+                        <span class="counter-suffix">.4%</span>
+                    </div>
+                    <div class="stat-label">Highest Score Achieved</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="450">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Students Scored Above 90%</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <div class="stat-label">Perfect 100s in Maths/Science</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="stat-number-value" data-target="100">0</span>
+                        <span class="counter-suffix">%</span>
+                    </div>
+                    <div class="stat-label">Overall Pass Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ================= ACHIEVERS GALLERY ================= -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-pill">
+                    <i class="fa-solid fa-medal"></i> Stellar Performers
+                </div>
+                <h2 class="section-title">
+                    The Wall of <span>Pride</span>
+                </h2>
+                <p class="section-subtitle">
+                    Filter by examination year or board to view topper scorecards and subject distinctions.
+                </p>
+            </div>
 
+            <!-- Filter Tabs -->
+            <div class="courses-filter-tabs">
+                <button class="filter-tab-btn active" data-filter="all">All Achievers</button>
+                <button class="filter-tab-btn" data-filter="2026">Recent 2025-26</button>
+                <button class="filter-tab-btn" data-filter="2024">2024</button>
+                <button class="filter-tab-btn" data-filter="2023">2023</button>
+                <button class="filter-tab-btn" data-filter="cbse">CBSE</button>
+                <button class="filter-tab-btn" data-filter="icse">ICSE</button>
+                <button class="filter-tab-btn" data-filter="jac">JAC</button>
+            </div>
+
+            <!-- Achievers Grid -->
+            <div class="achievers-grid">
+
+                <!-- Topper 1 -->
+                <div class="achiever-card" data-category="2026 cbse">
+                    <div class="medal-badge">🥇</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Aarav Sharma</h3>
+                    <div class="achiever-score">98.4%</div>
+                    <p class="achiever-school">Vivek Vidyalaya, Jamshedpur</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 100/100 Maths | 99/100 Science
+                    </div>
+                    <span class="achiever-badge-board">CBSE Class X (2026)</span>
+                </div>
+
+                <!-- Topper 2 -->
+                <div class="achiever-card" data-category="2026 icse">
+                    <div class="medal-badge">🥈</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Ananya Verma</h3>
+                    <div class="achiever-score">97.8%</div>
+                    <p class="achiever-school">VIG English School</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 99/100 Physics | 98/100 Chemistry
+                    </div>
+                    <span class="achiever-badge-board">ICSE Class X (2026)</span>
+                </div>
+
+                <!-- Topper 3 -->
+                <div class="achiever-card" data-category="2026 jac">
+                    <div class="medal-badge">🥉</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Rahul Kumar Mahato</h3>
+                    <div class="achiever-score">97.2%</div>
+                    <p class="achiever-school">JAC Board State Topper</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ State Rank 4 | 99/100 Maths
+                    </div>
+                    <span class="achiever-badge-board">JAC Class X (2026)</span>
+                </div>
+
+                <!-- Topper 4 -->
+                <div class="achiever-card" data-category="2024 cbse">
+                    <div class="medal-badge">🥇</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Pooja Kumari</h3>
+                    <div class="achiever-score">98.1%</div>
+                    <p class="achiever-school">DBMS English School</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 100/100 Maths | 98/100 Science
+                    </div>
+                    <span class="achiever-badge-board">CBSE Class X (2024)</span>
+                </div>
+
+                <!-- Topper 5 -->
+                <div class="achiever-card" data-category="2024 icse">
+                    <div class="medal-badge">🥈</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Rohan Sen</h3>
+                    <div class="achiever-score">97.4%</div>
+                    <p class="achiever-school">VIG English School</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 98/100 Biology | 97/100 English
+                    </div>
+                    <span class="achiever-badge-board">ICSE Class X (2024)</span>
+                </div>
+
+                <!-- Topper 6 -->
+                <div class="achiever-card" data-category="2024 senior">
+                    <div class="medal-badge">⭐</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Vikas Singh</h3>
+                    <div class="achiever-score">96.8%</div>
+                    <p class="achiever-school">Senior Secondary Science (PCM)</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ JEE Main Qualified 99.1%ile
+                    </div>
+                    <span class="achiever-badge-board">Class XII Science (2024)</span>
+                </div>
+
+                <!-- Topper 7 -->
+                <div class="achiever-card" data-category="2023 cbse">
+                    <div class="medal-badge">🥇</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Sneha Mondal</h3>
+                    <div class="achiever-score">98.0%</div>
+                    <p class="achiever-school">Vivek Vidyalaya</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 100/100 Science | 97/100 Maths
+                    </div>
+                    <span class="achiever-badge-board">CBSE Class X (2023)</span>
+                </div>
+
+                <!-- Topper 8 -->
+                <div class="achiever-card" data-category="2023 jac">
+                    <div class="medal-badge">🥈</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Amit Kumar Pandey</h3>
+                    <div class="achiever-score">96.9%</div>
+                    <p class="achiever-school">JAC Board District Topper</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ District Rank 2
+                    </div>
+                    <span class="achiever-badge-board">JAC Class X (2023)</span>
+                </div>
+
+                <!-- Topper 9 -->
+                <div class="achiever-card" data-category="2023 icse">
+                    <div class="medal-badge">⭐</div>
+                    <div class="achiever-avatar">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="achiever-name">Tanmay Dey</h3>
+                    <div class="achiever-score">96.5%</div>
+                    <p class="achiever-school">Vidya Bharati Chinmaya</p>
+                    <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: 6px;">
+                        ★ 98/100 Computer Applications
+                    </div>
+                    <span class="achiever-badge-board">ICSE Class X (2023)</span>
+                </div>
+
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="cta-banner" style="margin-top: 60px;">
+                <h2>Will You Be Our Next Board Topper?</h2>
+                <p>Equip yourself with the best mentorship, study material, and test practice at Aim Point Study Circle.</p>
+                <div class="cta-banner-buttons">
+                    <a href="admission.html" class="btn-primary">
+                        <i class="fa-solid fa-user-plus"></i> Join the Next Batch
+                    </a>
+                    <a href="courses.html" class="btn-secondary">
+                        <i class="fa-solid fa-book-open"></i> Browse Programs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>AIM POINT <span>STUDY CIRCLE</span></h2>
+                    <p class="tagline">Thinking of Nation, Working on Education</p>
+                    <p class="desc">
+                        Providing premier academic coaching from Class K.G. to XII since 1993. Empowering students with the knowledge, discipline, and confidence to succeed.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/919334649269" class="footer-social-btn" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="location.html" class="footer-social-btn" title="Location"><i class="fa-solid fa-map-location-dot"></i></a>
+                        <a href="tel:9334649269" class="footer-social-btn" title="Call"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
 
-        <h2>AIM POINT STUDY CIRCLE</h2>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="results.html"><i class="fa-solid fa-chevron-right"></i> Results & Achievers</a></li>
+                        <li><a href="location.html"><i class="fa-solid fa-chevron-right"></i> Location & Map</a></li>
+                        <li><a href="admission.html"><i class="fa-solid fa-chevron-right"></i> Online Admission</a></li>
+                    </ul>
+                </div>
 
-        <p>Thinking of Nation, Working on Education</p>
+                <div class="footer-col">
+                    <h3>Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> CBSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> ICSE Board (K.G.-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> JAC Board (VIII-X)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> XI-XII Science (PCM/PCB)</a></li>
+                        <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Board Test Series</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div><strong>Director:</strong> Rupesh Kr. Singh</div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div><a href="tel:9334649269">+91 9334649269</a><br><a href="tel:9204941579">+91 9204941579</a></div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>Ashok Nagar, Near Vivek Vidyalaya, Chhota Govindpur, Jamshedpur - 15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 AIM POINT STUDY CIRCLE. All Rights Reserved.</div>
+                <div>Excellence in Education Since 1993</div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Floating WhatsApp Action -->
+    <a href="https://wa.me/919334649269?text=Hello%20Aim%20Point%2C%20I%20would%20like%20to%20inquire%20about%20admissions." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back To Top Button -->
+    <a href="#" class="back-to-top" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>
