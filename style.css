@@ -75,7 +75,12 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--bg-main);
+    background-color: #f1f5f9;
+    background-image: 
+        radial-gradient(circle at 15% 15%, rgba(16, 59, 135, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 45%),
+        radial-gradient(#cbd5e1 0.9px, transparent 0.9px);
+    background-size: 100% 100%, 100% 100%, 24px 24px;
     color: var(--text-main);
     line-height: 1.65;
     overflow-x: hidden;
@@ -742,10 +747,11 @@ nav {
 
 /* ================= STATS COUNTER BAR ================= */
 .stats-section {
-    background: #ffffff;
-    padding: 38px 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid var(--border-light);
+    background: linear-gradient(135deg, #061024 0%, #0d2757 50%, #0a192f 100%);
+    padding: 42px 0;
+    box-shadow: 0 15px 35px rgba(6, 16, 36, 0.35);
+    border-top: 3px solid var(--accent-gold);
+    border-bottom: 3px solid rgba(245, 158, 11, 0.35);
     position: relative;
     z-index: 10;
 }
@@ -759,7 +765,7 @@ nav {
 .stat-item {
     text-align: center;
     padding: 12px;
-    border-right: 1px solid var(--border-light);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .stat-item:last-child {
@@ -768,15 +774,16 @@ nav {
 
 .stat-number {
     font-family: var(--font-heading);
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     font-weight: 900;
-    color: var(--primary-600);
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .stat-number .counter-suffix {
@@ -784,9 +791,10 @@ nav {
 }
 
 .stat-label {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.88);
+    letter-spacing: 0.3px;
 }
 
 /* ================= SECTION COMMON STYLES ================= */
@@ -834,7 +842,14 @@ section {
 
 /* ================= FEATURES / WHY CHOOSE US ================= */
 .features-section {
-    background: var(--bg-main);
+    background: linear-gradient(180deg, #f8faff 0%, #eef4fc 50%, #f8faff 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(29, 78, 216, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 40%),
+        linear-gradient(to right, rgba(16, 59, 135, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(16, 59, 135, 0.035) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
 }
 
 .features-grid {
@@ -844,12 +859,14 @@ section {
 }
 
 .feature-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-light);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(203, 213, 225, 0.85);
     border-radius: var(--radius-lg);
     padding: 34px 28px;
     transition: var(--transition-base);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.07), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -870,8 +887,8 @@ section {
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(29, 78, 216, 0.2);
+    box-shadow: 0 20px 35px -10px rgba(16, 59, 135, 0.18), 0 10px 15px -5px rgba(16, 59, 135, 0.08);
+    border-color: var(--primary-500);
 }
 
 .feature-card:hover::before {
@@ -913,7 +930,12 @@ section {
 
 /* ================= COURSES PREVIEW & COURSES PAGE ================= */
 .courses-section {
-    background: #ffffff;
+    background: linear-gradient(180deg, #f1f5fa 0%, #e2ebf7 50%, #f1f5fa 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(circle at 50% 10%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+        radial-gradient(rgba(16, 59, 135, 0.07) 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 26px 26px;
 }
 
 .courses-filter-tabs {
@@ -927,17 +949,19 @@ section {
 .filter-tab-btn {
     padding: 10px 22px;
     border-radius: var(--radius-full);
-    background: var(--bg-main);
+    background: #ffffff;
     color: var(--text-muted);
     font-weight: 700;
     font-size: 0.92rem;
-    border: 1px solid var(--border-light);
+    border: 1.5px solid var(--border-light);
+    box-shadow: 0 2px 6px rgba(10, 25, 47, 0.04);
     transition: var(--transition-fast);
 }
 
 .filter-tab-btn:hover {
     background: var(--primary-100);
     color: var(--primary-600);
+    border-color: var(--primary-300);
 }
 
 .filter-tab-btn.active {
@@ -956,9 +980,9 @@ section {
 .course-card {
     background: #ffffff;
     border-radius: var(--radius-xl);
-    border: 2px solid var(--border-light);
+    border: 2px solid #cbd5e1;
     padding: 30px 26px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 12px 28px -5px rgba(10, 25, 47, 0.08);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1207,7 +1231,12 @@ section {
 
 /* ================= RESULTS HIGHLIGHTS / ACHIEVERS ================= */
 .results-section {
-    background: var(--bg-main);
+    background: linear-gradient(180deg, #edf2f9 0%, #e2eaf6 50%, #edf2f9 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.09) 0%, transparent 60%),
+        radial-gradient(rgba(245, 158, 11, 0.09) 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 28px 28px;
 }
 
 .achievers-grid {
@@ -1218,18 +1247,19 @@ section {
 
 .achiever-card {
     background: #ffffff;
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     border-radius: var(--radius-lg);
     padding: 30px 24px;
     text-align: center;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
     transition: var(--transition-base);
     position: relative;
 }
 
 .achiever-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 35px -10px rgba(245, 158, 11, 0.25), 0 10px 15px -5px rgba(10, 25, 47, 0.08);
+    border-color: var(--accent-gold);
 }
 
 .medal-badge {
@@ -1287,7 +1317,9 @@ section {
 
 /* ================= FAQ SECTION ================= */
 .faq-section {
-    background: #ffffff;
+    background: linear-gradient(180deg, #f1f5fa 0%, #e3ecf7 100%);
+    background-image: radial-gradient(rgba(100, 116, 139, 0.09) 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
 .faq-container {
@@ -1299,17 +1331,18 @@ section {
 }
 
 .faq-item {
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     border-radius: var(--radius-md);
     overflow: hidden;
     transition: var(--transition-fast);
-    background: var(--bg-main);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .faq-item.active {
-    border-color: var(--primary-400);
+    border-color: var(--primary-500);
     background: #ffffff;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 8px 20px rgba(16, 59, 135, 0.1);
 }
 
 .faq-question {
@@ -1414,7 +1447,12 @@ section {
 
 /* Timeline */
 .timeline-section {
-    background: #ffffff;
+    background: linear-gradient(180deg, #f8faff 0%, #eef4fd 50%, #f8faff 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(at 50% 50%, rgba(29, 78, 216, 0.05) 0px, transparent 60%),
+        linear-gradient(to right, rgba(16, 59, 135, 0.035) 1px, transparent 1px);
+    background-size: 100% 100%, 36px 36px;
 }
 
 .timeline {
@@ -1473,15 +1511,15 @@ section {
 
 .timeline-content {
     padding: 22px;
-    background: var(--bg-main);
-    border: 1px solid var(--border-light);
+    background: #ffffff;
+    border: 1.5px solid #cbd5e1;
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 8px 20px -4px rgba(10, 25, 47, 0.06);
     transition: var(--transition-fast);
 }
 
 .timeline-content:hover {
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 14px 28px -4px rgba(16, 59, 135, 0.14);
     border-color: var(--primary-400);
 }
 
@@ -1513,16 +1551,17 @@ section {
 .vmv-card {
     background: #ffffff;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     padding: 34px 26px;
     text-align: center;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 25px -4px rgba(10, 25, 47, 0.06);
     transition: var(--transition-base);
 }
 
 .vmv-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 35px -8px rgba(16, 59, 135, 0.15);
+    border-color: var(--primary-500);
 }
 
 .vmv-icon {
@@ -1564,7 +1603,12 @@ section {
 
 /* ================= LOCATION & CONTACT PAGE ================= */
 .location-section {
-    background: var(--bg-main);
+    background: linear-gradient(180deg, #f1f5f9 0%, #e6effa 100%);
+    position: relative;
+    background-image: 
+        linear-gradient(to right, rgba(16, 59, 135, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(16, 59, 135, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
 }
 
 .location-grid {
@@ -1577,9 +1621,9 @@ section {
 .contact-details-card {
     background: #ffffff;
     border-radius: var(--radius-xl);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     padding: 38px 30px;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 12px 30px -5px rgba(10, 25, 47, 0.08);
 }
 
 .contact-details-card h2 {
@@ -1663,9 +1707,9 @@ section {
 .map-wrapper {
     background: #ffffff;
     border-radius: var(--radius-xl);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     padding: 16px;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 12px 30px -5px rgba(10, 25, 47, 0.08);
 }
 
 .map-container {
@@ -1688,7 +1732,12 @@ section {
 
 /* ================= ADMISSION FORM PAGE ================= */
 .admission-page {
-    background: radial-gradient(circle at 50% 0%, #eff6ff 0%, #f8fafc 100%);
+    background: linear-gradient(180deg, #f1f5fa 0%, #e2ebf8 50%, #f1f5fa 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+        radial-gradient(rgba(16, 59, 135, 0.07) 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 28px 28px;
     padding: 50px 0 90px 0;
 }
 
@@ -1697,8 +1746,8 @@ section {
     margin: 0 auto;
     background: #ffffff;
     border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--border-light);
+    box-shadow: 0 20px 50px -10px rgba(10, 25, 47, 0.18);
+    border: 2px solid #cbd5e1;
     overflow: hidden;
 }
 
@@ -2368,7 +2417,14 @@ footer {
 
 /* ================= NOTICE BOARD SECTION ================= */
 .notices-section {
-    background: #f8fafc;
+    background: linear-gradient(180deg, #f8faff 0%, #edf3fc 100%);
+    position: relative;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.06) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(29, 78, 216, 0.06) 0px, transparent 50%),
+        linear-gradient(to right, rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
     padding: 90px 0;
 }
 
@@ -2382,9 +2438,9 @@ footer {
 .notice-card {
     background: #ffffff;
     border-radius: var(--radius-xl);
-    border: 1px solid var(--border-light);
+    border: 1.5px solid #cbd5e1;
     padding: 28px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 25px -5px rgba(10, 25, 47, 0.06);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2394,7 +2450,7 @@ footer {
 
 .notice-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 18px 35px -8px rgba(16, 59, 135, 0.15);
     border-color: var(--primary-500);
 }
 
@@ -2504,7 +2560,10 @@ footer {
 
 /* ================= CAMPUS GALLERY SECTION ================= */
 .gallery-section {
-    background: #ffffff;
+    background: linear-gradient(180deg, #f8faff 0%, #e9f0fa 100%);
+    position: relative;
+    background-image: radial-gradient(rgba(16, 59, 135, 0.06) 1.1px, transparent 1.1px);
+    background-size: 24px 24px;
     padding: 90px 0;
 }
 
